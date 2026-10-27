@@ -11,7 +11,7 @@ runs:
         for archivo in README.md LICENSE.md CONTRIBUTING.md;
         do
           if [ -f $archivo ]; then
-            echo "El archivo $archivo" esta en el directorio
+            echo "El archivo $archivo esta en el directorio"
           else
             echo "El archivo no está en el repositorio"
             ERROR=1
