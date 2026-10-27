@@ -5,8 +5,8 @@ runs:
   using: "composite"
   steps:
     - name: "Existencia archivos"
-    - shell: bash
-    - run: | 
+      shell: bash
+      run: | 
         ERROR=0;
         for archivo in README.md LICENSE.md CONTRIBUTING.md;
         do
