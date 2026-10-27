@@ -11,16 +11,16 @@ runs:
         for archivo in README.md LICENSE.md CONTRIBUTING.md;
         do
           if [ -f $archivo ]; then
-            echo "El archivo $archivo" esta en el directorio
+            echo "El archivo $archivo esta en el directorio"
           else
             echo "El archivo no está en el repositorio"
             ERROR=1
           fi
         done
 
-        if[ $ERROR -eq 1 ]; then 
+        if [ $ERROR -eq 1 ]; then 
           echo "Falta algun archivo en el repositorio..."
           exit 1
         else 
           echo "No faltan archivos en el repositorio..."
-        fi;
+        fi
