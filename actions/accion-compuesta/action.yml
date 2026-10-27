@@ -18,7 +18,7 @@ runs:
           fi
         done
 
-        if[ $ERROR -eq 1 ]; then 
+        if [ $ERROR -eq 1 ]; then 
           echo "Falta algun archivo en el repositorio..."
           exit 1
         else 
