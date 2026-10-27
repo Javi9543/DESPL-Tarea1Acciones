@@ -1,0 +1,14 @@
+name: "Prueba de accion compuesta"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  comprob:
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Descarga de los archivos del repositorio"
+      uses: actions/checkout@v7 
+
+    - name: Ejecuta accion compuesta local
+      uses: ./actions/accion-compuesta 

@@ -1,0 +1,19 @@
+name: 'Comprobacion de existencia Contributing, License y readme'
+descripcion: 'Comprueba que en el repositorio esten los archivos que pide el ejercicio'
+
+runs:
+  using: "composite"
+  steps:
+    - name: "Existencia archivos"
+      shell: bash
+      run: | 
+        ERROR=0
+        for archivo in README.MD LICENSE.md CONTRIBUTING.md;
+        do
+          if [ -f "$archivo" ]; then
+            echo "El archivo $archivo esta en el directorio"
+          else
+            echo "El archivo no está en el repositorio"
+            ERROR=1
+          fi
+        done
