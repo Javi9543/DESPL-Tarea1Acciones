@@ -1,4 +1,4 @@
-name: Prueba de accion compuesta
+name: "Prueba de accion compuesta"
 
 on:
   workflow_dispatch:
