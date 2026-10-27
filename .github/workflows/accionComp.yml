@@ -7,7 +7,7 @@ jobs:
   comprob:
     runs-on: ubuntu-latest
     steps:
-    - name: "Descarga de los archivos del repositorio":
+    - name: "Descarga de los archivos del repositorio"
       uses: actions/checkout@v7 
 
     - name: Ejecuta accion compuesta local
