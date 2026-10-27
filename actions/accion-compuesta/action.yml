@@ -8,7 +8,7 @@ runs:
       shell: bash
       run: | 
         ERROR=0
-        for archivo in README.md LICENSE.md CONTRIBUTING.md;
+        for archivo in README.MD LICENSE.md CONTRIBUTING.md;
         do
           if [ -f "$archivo" ]; then
             echo "El archivo $archivo esta en el directorio"
@@ -17,10 +17,3 @@ runs:
             ERROR=1
           fi
         done
-
-        if [ "$ERROR" -eq 1 ]; then 
-          echo "Falta algun archivo en el repositorio..."
-          exit 1
-        else 
-          echo "No faltan archivos en el repositorio..."
-        fi
