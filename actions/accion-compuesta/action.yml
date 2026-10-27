@@ -5,23 +5,22 @@ runs:
   using: "composite"
   steps:
     - name: "Existencia archivos"
-    - shell: bash
-    - run: | 
-        ERROR=0;
+      shell: bash
+      run: | 
+        ERROR=0
         for archivo in README.md LICENSE.md CONTRIBUTING.md;
         do
-          if [-f $archivo]; then
-            echo "El archivo $archivo" esta en el directorio;
+          if [ -f $archivo ]; then
+            echo "El archivo $archivo" esta en el directorio
           else
-            echo "El archivo no está en el repositorio";
-            ERROR=1;
-          fi;
+            echo "El archivo no está en el repositorio"
+            ERROR=1
+          fi
         done
 
-        if[$ERROR -eq 1]; then 
-          "Falta algun archivo en el repositorio..."
+        if[ $ERROR -eq 1 ]; then 
+          echo "Falta algun archivo en el repositorio..."
           exit 1
         else 
-          echo "No faltan archivos en el repositorio...";
-        fi
-        done; 
+          echo "No faltan archivos en el repositorio..."
+        fi;
