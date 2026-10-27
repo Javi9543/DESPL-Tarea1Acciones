@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: "Descarga los archivos del repositorio"
-    - uses: actions/checkout@v4; #Sirve para que la accion que estamos usando, lea los archivos del repo.
+    - uses: actions/checkout@v4; 
 
     - name: Ejecuta accion compuesta local
-    - uses: ./actions/accion-compuesta #llama al accion local que programé en accion-compuesta en actions
+    - uses: ./actions/accion-compuesta 
