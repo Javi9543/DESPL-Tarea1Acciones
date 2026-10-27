@@ -1,0 +1,5 @@
+name: 'comprobacion documentacion'
+description: "Accion que comprueba si los archivos de documentacion existen en Javascript"
+runs:
+  using: node24
+  main: index.js
