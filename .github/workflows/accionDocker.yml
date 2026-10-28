@@ -1,0 +1,14 @@
+name: "Prueba de accion con Docker"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  comprobacion-con-JS:
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Descarga de los archivos del repositorio"
+    - uses: actions/checkout@v7
+
+    - name: Ejecuta accion compuesta en local
+    - uses: ./actions/accion-docker
