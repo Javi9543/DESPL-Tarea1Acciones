@@ -1,0 +1,6 @@
+name: "Comprobacion de documentacion en docker"
+descripcion: "Compruebo que la documentacion necesaria existe en el repositorio mediante docker"
+
+runs:
+  using: docker
+  image: DockerFile
