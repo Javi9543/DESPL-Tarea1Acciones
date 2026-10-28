@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  comprobacion-con-JS:
+  comprobacion-con-Docker:
     runs-on: ubuntu-latest
     steps:
     - name: "Descarga de los archivos del repositorio"
