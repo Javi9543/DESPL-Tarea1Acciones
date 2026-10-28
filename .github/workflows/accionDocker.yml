@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: "Descarga de los archivos del repositorio"
-    - uses: actions/checkout@v7
+      uses: actions/checkout@v7
 
     - name: Ejecuta accion compuesta en local
-    - uses: ./actions/accion-docker
+      uses: ./actions/accion-docker
